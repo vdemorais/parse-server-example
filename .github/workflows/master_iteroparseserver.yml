@@ -18,7 +18,7 @@ jobs:
     - name: Set up Node.js version
       uses: actions/setup-node@v1
       with:
-        node-version: '12.x'
+        node-version: '10.1'
 
     - name: npm install, build, and test
       run: |
@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: 'iteroparseserver'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_28328d8408bc41a48fed57f450cc54c0 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_03ecb64123d244d89e92d541a5fc0119 }}
         package: .
